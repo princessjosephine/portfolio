@@ -2234,7 +2234,6 @@ section,
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 0 30px rgba(var(--default-color), 0.1);
-  max-width: 100%;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-wrapper {
@@ -2243,8 +2242,8 @@ section,
 
 .portfolio-details .portfolio-details-slider img {
   aspect-ratio: 1/1;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 
