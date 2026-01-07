@@ -29,7 +29,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Custom Styles for Larger Text and Underlined Titles -->
+  <!-- Custom Styles for Larger Text, Underlined Titles, and Text Wrapping -->
   <style>
     .portfolio-description p,
     .portfolio-description ul li {
@@ -41,6 +41,37 @@
     .portfolio-description h3 {
       text-decoration: underline;
       text-underline-offset: 8px;
+    }
+
+    .float-image-container {
+      float: right;
+      margin: 0 0 20px 30px;
+      max-width: 400px;
+      width: 40%;
+    }
+
+    .float-image-container-left {
+      float: left;
+      margin: 0 30px 20px 0;
+      max-width: 400px;
+      width: 40%;
+    }
+
+    @media (max-width: 768px) {
+
+      .float-image-container,
+      .float-image-container-left {
+        float: none;
+        margin: 20px auto;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
     }
   </style>
 </head>
@@ -177,37 +208,9 @@
               <h2 class="mt-5">Information about the Employer</h2>
               <h3 class="mt-4">Computing and Communications Services</h3>
 
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    Computing and Communications Services works as the central IT department for the University of
-                    Guelph,
-                    managing the technology infrastructure that supports daily operations across campus. The department
-                    handles a wide range of services:
-                  </p>
-                  <ul>
-                    <li>Email and collaboration platforms through Gryph Mail and Office 365</li>
-                    <li>Network and telecommunications infrastructure</li>
-                    <li>Information security and identity management</li>
-                    <li>Software licensing and distribution</li>
-                    <li>Web development and solutions</li>
-                    <li>Full technical support for the university community</li>
-                  </ul>
-                  <p>
-                    The size of CCS operations is significant. Thousands of students, faculty, and staff rely on these
-                    systems for everything from research computing to administrative work to online learning. This
-                    creates a
-                    complex technical environment where reliability matters and problems affect real work. The
-                    department
-                    approaches this responsibility through core values of service culture, integrity, individual
-                    leadership,
-                    teamwork, agility, and communication.
-                  </p>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="clearfix">
+                <!-- Floating Image -->
+                <div class="float-image-container" data-aos="fade-left" data-aos-delay="200">
                   <div class="hero-visual">
                     <div class="profile-container" style="position: relative;">
                       <div class="background-elements">
@@ -219,33 +222,38 @@
                     </div>
                   </div>
                 </div>
+
+                <p>
+                  Computing and Communications Services works as the central IT department for the University of
+                  Guelph,
+                  managing the technology infrastructure that supports daily operations across campus. The department
+                  handles a wide range of services:
+                </p>
+                <ul>
+                  <li>Email and collaboration platforms through Gryph Mail and Office 365</li>
+                  <li>Network and telecommunications infrastructure</li>
+                  <li>Information security and identity management</li>
+                  <li>Software licensing and distribution</li>
+                  <li>Web development and solutions</li>
+                  <li>Full technical support for the university community</li>
+                </ul>
+                <p>
+                  The size of CCS operations is significant. Thousands of students, faculty, and staff rely on these
+                  systems for everything from research computing to administrative work to online learning. This
+                  creates a
+                  complex technical environment where reliability matters and problems affect real work. The
+                  department
+                  approaches this responsibility through core values of service culture, integrity, individual
+                  leadership,
+                  teamwork, agility, and communication.
+                </p>
               </div>
 
               <h3 class="mt-5">The Managed Desktops Division</h3>
 
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    I worked within Managed Desktops, a service that provides full desktop management, security, and
-                    support
-                    for university departments. Rather than keeping their own IT staff and infrastructure, departments
-                    can
-                    subscribe to this service and receive professional management of their computing environment. The
-                    service covers the complete desktop lifecycle:
-                  </p>
-                  <ul>
-                    <li>Computer procurement, setup, and provisioning</li>
-                    <li>Software deployment and configuration</li>
-                    <li>Security maintenance through SentinelOne EDR</li>
-                    <li>Hardware coordination, repairs, and replacements</li>
-                    <li>Ongoing troubleshooting and technical support</li>
-                    <li>Management using Microsoft Endpoint Configuration Manager</li>
-                  </ul>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="clearfix">
+                <!-- Floating Image -->
+                <div class="float-image-container-left" data-aos="fade-right" data-aos-delay="200">
                   <div class="hero-visual">
                     <div class="profile-container" style="position: relative;">
                       <div class="background-elements">
@@ -257,6 +265,23 @@
                     </div>
                   </div>
                 </div>
+
+                <p>
+                  I worked within Managed Desktops, a service that provides full desktop management, security, and
+                  support
+                  for university departments. Rather than keeping their own IT staff and infrastructure, departments
+                  can
+                  subscribe to this service and receive professional management of their computing environment. The
+                  service covers the complete desktop lifecycle:
+                </p>
+                <ul>
+                  <li>Computer procurement, setup, and provisioning</li>
+                  <li>Software deployment and configuration</li>
+                  <li>Security maintenance through SentinelOne EDR</li>
+                  <li>Hardware coordination, repairs, and replacements</li>
+                  <li>Ongoing troubleshooting and technical support</li>
+                  <li>Management using Microsoft Endpoint Configuration Manager</li>
+                </ul>
               </div>
 
               <h2 class="mt-5">Goals</h2>
@@ -467,27 +492,9 @@
 
               <h3 class="mt-4">Overview</h3>
 
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    As a Student IT Technician within the Managed Desktops division, I provided comprehensive technical
-                    support for university departments enrolled in the service. My daily work involved:
-                  </p>
-                  <ul>
-                    <li>Troubleshooting hardware and software issues across Windows and macOS systems</li>
-                    <li>Managing user accounts in Active Directory</li>
-                    <li>Deploying software through Microsoft Endpoint Configuration Manager</li>
-                    <li>Administering endpoint security through SentinelOne EDR</li>
-                    <li>Handling support tickets through BMC FootPrints</li>
-                    <li>Balancing desk-side visits for complex problems with remote support for quick fixes</li>
-                    <li>Working with technologies from network printers and peripheral devices to email systems and file
-                      storage</li>
-                  </ul>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="clearfix">
+                <!-- Floating Image -->
+                <div class="float-image-container" data-aos="fade-left" data-aos-delay="200">
                   <div class="hero-visual">
                     <div class="profile-container" style="position: relative;">
                       <div class="background-elements">
@@ -499,30 +506,28 @@
                     </div>
                   </div>
                 </div>
+
+                <p>
+                  As a Student IT Technician within the Managed Desktops division, I provided comprehensive technical
+                  support for university departments enrolled in the service. My daily work involved:
+                </p>
+                <ul>
+                  <li>Troubleshooting hardware and software issues across Windows and macOS systems</li>
+                  <li>Managing user accounts in Active Directory</li>
+                  <li>Deploying software through Microsoft Endpoint Configuration Manager</li>
+                  <li>Administering endpoint security through SentinelOne EDR</li>
+                  <li>Handling support tickets through BMC FootPrints</li>
+                  <li>Balancing desk-side visits for complex problems with remote support for quick fixes</li>
+                  <li>Working with technologies from network printers and peripheral devices to email systems and file
+                    storage</li>
+                </ul>
               </div>
 
               <h3 class="mt-5">Most Interesting Aspects</h3>
 
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    The most interesting aspect of this role was the variety and unpredictability of each day. One
-                    moment I
-                    might be diagnosing why a specific software package failed to deploy across multiple computers, and
-                    the
-                    next I would be helping a frustrated faculty member recover important files or troubleshoot a
-                    network
-                    connectivity issue. Each ticket presented a unique puzzle that required both technical knowledge and
-                    interpersonal skills to solve effectively. What made the work particularly engaging was seeing the
-                    direct impact of my efforts when a client could get back to their work or when I identified a
-                    solution
-                    that could help prevent similar issues for others.
-                  </p>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="clearfix">
+                <!-- Floating Image -->
+                <div class="float-image-container-left" data-aos="fade-right" data-aos-delay="200">
                   <div class="hero-visual">
                     <div class="profile-container" style="position: relative;">
                       <div class="background-elements">
@@ -534,32 +539,27 @@
                     </div>
                   </div>
                 </div>
+
+                <p>
+                  The most interesting aspect of this role was the variety and unpredictability of each day. One
+                  moment I
+                  might be diagnosing why a specific software package failed to deploy across multiple computers, and
+                  the
+                  next I would be helping a frustrated faculty member recover important files or troubleshoot a
+                  network
+                  connectivity issue. Each ticket presented a unique puzzle that required both technical knowledge and
+                  interpersonal skills to solve effectively. What made the work particularly engaging was seeing the
+                  direct impact of my efforts when a client could get back to their work or when I identified a
+                  solution
+                  that could help prevent similar issues for others.
+                </p>
               </div>
 
               <h3 class="mt-5">Skills and Learning</h3>
 
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    The skills I needed for this job came from both my academic background and on-the-job learning:
-                  </p>
-                  <ul>
-                    <li><strong>From Academic Background:</strong> Foundational knowledge about operating systems,
-                      networking concepts, and general problem-solving approaches that helped me understand how systems
-                      work
-                      and why issues occur</li>
-                    <li><strong>Learned on the Job:</strong> Working with Active Directory, using management tools like
-                      MECM, troubleshooting in live production environments, and communicating effectively with
-                      non-technical clients</li>
-                    <li><strong>Most Valuable Skill Developed:</strong> The ability to learn quickly and independently,
-                      using available resources like documentation, knowledge bases, and experienced colleagues to build
-                      competence in unfamiliar areas</li>
-                  </ul>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="clearfix">
+                <!-- Floating Image -->
+                <div class="float-image-container" data-aos="fade-left" data-aos-delay="200">
                   <div class="hero-visual">
                     <div class="profile-container" style="position: relative;">
                       <div class="background-elements">
@@ -571,6 +571,22 @@
                     </div>
                   </div>
                 </div>
+
+                <p>
+                  The skills I needed for this job came from both my academic background and on-the-job learning:
+                </p>
+                <ul>
+                  <li><strong>From Academic Background:</strong> Foundational knowledge about operating systems,
+                    networking concepts, and general problem-solving approaches that helped me understand how systems
+                    work
+                    and why issues occur</li>
+                  <li><strong>Learned on the Job:</strong> Working with Active Directory, using management tools like
+                    MECM, troubleshooting in live production environments, and communicating effectively with
+                    non-technical clients</li>
+                  <li><strong>Most Valuable Skill Developed:</strong> The ability to learn quickly and independently,
+                    using available resources like documentation, knowledge bases, and experienced colleagues to build
+                    competence in unfamiliar areas</li>
+                </ul>
               </div>
 
               <h2 class="mt-5">Conclusions</h2>
@@ -609,23 +625,9 @@
 
               <h2 class="mt-5">Acknowledgments</h2>
 
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    I want to thank Haniya Saleh, my supervisor, for providing guidance, constructive feedback, and
-                    support
-                    throughout this work term. Her willingness to answer questions, share knowledge, and trust me with
-                    meaningful responsibilities made this a valuable learning experience. I also thank my colleagues on
-                    the
-                    Managed Desktops team and my fellow co-op students for creating a collaborative and supportive work
-                    environment. The knowledge shared, help offered, and professional relationships built made this term
-                    both productive and enjoyable. Finally, I thank the University of Guelph's Co-operative Education
-                    program and Computing and Communications Services for this opportunity.
-                  </p>
-                </div>
-                <!-- Image Column -->
-                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="clearfix">
+                <!-- Floating Image -->
+                <div class="float-image-container-left" data-aos="fade-right" data-aos-delay="200">
                   <div class="hero-visual">
                     <div class="profile-container" style="position: relative;">
                       <div class="background-elements">
@@ -637,6 +639,18 @@
                     </div>
                   </div>
                 </div>
+
+                <p>
+                  I want to thank Haniya Saleh, my supervisor, for providing guidance, constructive feedback, and
+                  support
+                  throughout this work term. Her willingness to answer questions, share knowledge, and trust me with
+                  meaningful responsibilities made this a valuable learning experience. I also thank my colleagues on
+                  the
+                  Managed Desktops team and my fellow co-op students for creating a collaborative and supportive work
+                  environment. The knowledge shared, help offered, and professional relationships built made this term
+                  both productive and enjoyable. Finally, I thank the University of Guelph's Co-operative Education
+                  program and Computing and Communications Services for this opportunity.
+                </p>
               </div>
 
             </div>
