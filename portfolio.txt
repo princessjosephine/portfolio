@@ -29,20 +29,13 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Custom Styles for Larger Text and Underlined Titles -->
-  <style>
-    .portfolio-description p,
-    .portfolio-description ul li {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-
-    .portfolio-description h2,
-    .portfolio-description h3 {
-      text-decoration: underline;
-      text-underline-offset: 8px;
-    }
-  </style>
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body class="portfolio-details-page">
@@ -174,8 +167,7 @@
                 term.
               </p>
 
-              <h2 class="mt-5">Information about the Employer</h2>
-              <h3 class="mt-4">Computing and Communications Services</h3>
+              <h3 class="mt-5">Computing and Communications Services</h3>
 
               <div class="row align-items-center my-4">
                 <!-- Text Content Column -->
@@ -221,43 +213,21 @@
                 </div>
               </div>
 
-              <h3 class="mt-5">The Managed Desktops Division</h3>
-
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    I worked within Managed Desktops, a service that provides full desktop management, security, and
-                    support
-                    for university departments. Rather than keeping their own IT staff and infrastructure, departments
-                    can
-                    subscribe to this service and receive professional management of their computing environment. The
-                    service covers the complete desktop lifecycle:
-                  </p>
-                  <ul>
-                    <li>Computer procurement, setup, and provisioning</li>
-                    <li>Software deployment and configuration</li>
-                    <li>Security maintenance through SentinelOne EDR</li>
-                    <li>Hardware coordination, repairs, and replacements</li>
-                    <li>Ongoing troubleshooting and technical support</li>
-                    <li>Management using Microsoft Endpoint Configuration Manager</li>
-                  </ul>
-                </div>
-
-                <!-- Image Column -->
-                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
-                  <div class="hero-visual">
-                    <div class="profile-container" style="position: relative;">
-                      <div class="background-elements">
-                        <div class="bg-circle circle-1"></div>
-                        <div class="bg-circle circle-2"></div>
-                      </div>
-                      <div class="profile-background"></div>
-                      <img src="assets/img/portfolio/me.webp" alt="Managed Desktops" class="profile-image">
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h3 class="mt-4">The Managed Desktops Division</h3>
+              <p>
+                I worked within Managed Desktops, a service that provides full desktop management, security, and support
+                for university departments. Rather than keeping their own IT staff and infrastructure, departments can
+                subscribe to this service and receive professional management of their computing environment. The
+                service covers the complete desktop lifecycle:
+              </p>
+              <ul>
+                <li>Computer procurement, setup, and provisioning</li>
+                <li>Software deployment and configuration</li>
+                <li>Security maintenance through SentinelOne EDR</li>
+                <li>Hardware coordination, repairs, and replacements</li>
+                <li>Ongoing troubleshooting and technical support</li>
+                <li>Management using Microsoft Endpoint Configuration Manager</li>
+              </ul>
 
               <h2 class="mt-5">Goals</h2>
               <p>
@@ -301,7 +271,7 @@
                               <div class="hero-visual">
                                 <div class="profile-container">
                                   <div class="profile-background"></div>
-                                  <img src="assets/img/portfolio/Oral communication.webp" alt="Oral Communication"
+                                  <img src="assets/img/portfolio/Oral communication.webp" alt="Description of image"
                                     class="profile-image"
                                     style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
                                 </div>
@@ -346,7 +316,7 @@
                               <div class="hero-visual">
                                 <div class="profile-container">
                                   <div class="profile-background"></div>
-                                  <img src="assets/img/portfolio/thinking.webp" alt="Problem Solving"
+                                  <img src="assets/img/portfolio/thinking.webp" alt="Description of image"
                                     class="profile-image"
                                     style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
                                 </div>
@@ -393,7 +363,7 @@
                               <div class="hero-visual">
                                 <div class="profile-container">
                                   <div class="profile-background"></div>
-                                  <img src="assets/img/portfolio/digital lit.webp" alt="Technological Literacy"
+                                  <img src="assets/img/portfolio/digital lit.webp" alt="Description of image"
                                     class="profile-image"
                                     style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
                                 </div>
@@ -436,7 +406,8 @@
                               <div class="hero-visual">
                                 <div class="profile-container">
                                   <div class="profile-background"></div>
-                                  <img src="assets/img/portfolio/teamwork.webp" alt="Teamwork" class="profile-image"
+                                  <img src="assets/img/portfolio/teamwork.webp" alt="Description of image"
+                                    class="profile-image"
                                     style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
                                 </div>
                               </div>
@@ -462,30 +433,37 @@
                   transfers across different IT roles and environments.
                 </p>
               </div>
+                <!-- Image Column -->
+                <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
+                  <div class="hero-visual">
+                    <div class="profile-container" style="position: relative;">
+                      <div class="background-elements">
+                        <div class="bg-circle circle-1"></div>
+                        <div class="bg-circle circle-2"></div>
+                      </div>
+                      <div class="profile-background"></div>
+                      <img src="assets/img/portfolio/me.webp" alt="CCS Building" class="profile-image">
+                    </div>
+                  </div>
+                </div>
 
               <h2 class="mt-5">Job Description</h2>
 
-              <h3 class="mt-4">Overview</h3>
-
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    As a Student IT Technician within the Managed Desktops division, I provided comprehensive technical
-                    support for university departments enrolled in the service. My daily work involved:
-                  </p>
-                  <ul>
-                    <li>Troubleshooting hardware and software issues across Windows and macOS systems</li>
-                    <li>Managing user accounts in Active Directory</li>
-                    <li>Deploying software through Microsoft Endpoint Configuration Manager</li>
-                    <li>Administering endpoint security through SentinelOne EDR</li>
-                    <li>Handling support tickets through BMC FootPrints</li>
-                    <li>Balancing desk-side visits for complex problems with remote support for quick fixes</li>
-                    <li>Working with technologies from network printers and peripheral devices to email systems and file
-                      storage</li>
-                  </ul>
-                </div>
-
+              <h3>Overview</h3>
+              <p>
+                As a Student IT Technician within the Managed Desktops division, I provided comprehensive technical
+                support for university departments enrolled in the service. My daily work involved:
+              </p>
+              <ul>
+                <li>Troubleshooting hardware and software issues across Windows and macOS systems</li>
+                <li>Managing user accounts in Active Directory</li>
+                <li>Deploying software through Microsoft Endpoint Configuration Manager</li>
+                <li>Administering endpoint security through SentinelOne EDR</li>
+                <li>Handling support tickets through BMC FootPrints</li>
+                <li>Balancing desk-side visits for complex problems with remote support for quick fixes</li>
+                <li>Working with technologies from network printers and peripheral devices to email systems and file
+                  storage</li>
+              </ul>
                 <!-- Image Column -->
                 <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
                   <div class="hero-visual">
@@ -495,32 +473,21 @@
                         <div class="bg-circle circle-2"></div>
                       </div>
                       <div class="profile-background"></div>
-                      <img src="assets/img/portfolio/me1.webp" alt="Job Overview" class="profile-image">
+                      <img src="assets/img/portfolio/me1.webp" alt="CCS Building" class="profile-image">
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <h3 class="mt-5">Most Interesting Aspects</h3>
-
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    The most interesting aspect of this role was the variety and unpredictability of each day. One
-                    moment I
-                    might be diagnosing why a specific software package failed to deploy across multiple computers, and
-                    the
-                    next I would be helping a frustrated faculty member recover important files or troubleshoot a
-                    network
-                    connectivity issue. Each ticket presented a unique puzzle that required both technical knowledge and
-                    interpersonal skills to solve effectively. What made the work particularly engaging was seeing the
-                    direct impact of my efforts when a client could get back to their work or when I identified a
-                    solution
-                    that could help prevent similar issues for others.
-                  </p>
-                </div>
-
+              <h3>Most Interesting Aspects</h3>
+              <p>
+                The most interesting aspect of this role was the variety and unpredictability of each day. One moment I
+                might be diagnosing why a specific software package failed to deploy across multiple computers, and the
+                next I would be helping a frustrated faculty member recover important files or troubleshoot a network
+                connectivity issue. Each ticket presented a unique puzzle that required both technical knowledge and
+                interpersonal skills to solve effectively. What made the work particularly engaging was seeing the
+                direct impact of my efforts when a client could get back to their work or when I identified a solution
+                that could help prevent similar issues for others.
+              </p>
                 <!-- Image Column -->
                 <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
                   <div class="hero-visual">
@@ -530,13 +497,13 @@
                         <div class="bg-circle circle-2"></div>
                       </div>
                       <div class="profile-background"></div>
-                      <img src="assets/img/portfolio/me2.webp" alt="Interesting Aspects" class="profile-image">
+                      <img src="assets/img/portfolio/me2.webp" alt="CCS Building" class="profile-image">
                     </div>
                   </div>
                 </div>
-              </div>
 
               <h3 class="mt-5">Skills and Learning</h3>
+              <h3 class="mt-5">Computing and Communications Services</h3>
 
               <div class="row align-items-center my-4">
                 <!-- Text Content Column -->
@@ -557,7 +524,6 @@
                       competence in unfamiliar areas</li>
                   </ul>
                 </div>
-
                 <!-- Image Column -->
                 <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
                   <div class="hero-visual">
@@ -567,7 +533,7 @@
                         <div class="bg-circle circle-2"></div>
                       </div>
                       <div class="profile-background"></div>
-                      <img src="assets/img/portfolio/me3.webp" alt="Skills and Learning" class="profile-image">
+                      <img src="assets/img/portfolio/me3.webp" alt="CCS Building" class="profile-image">
                     </div>
                   </div>
                 </div>
@@ -608,22 +574,18 @@
               </p>
 
               <h2 class="mt-5">Acknowledgments</h2>
+              <p>
+                I want to thank Haniya Saleh, my supervisor, for providing guidance, constructive feedback, and
+                support
+                throughout this work term. Her willingness to answer questions, share knowledge, and trust me with
+                meaningful responsibilities made this a valuable learning experience. I also thank my colleagues on
+                the
+                Managed Desktops team and my fellow co-op students for creating a collaborative and supportive work
+                environment. The knowledge shared, help offered, and professional relationships built made this term
+                both productive and enjoyable. Finally, I thank the University of Guelph's Co-operative Education
+                program and Computing and Communications Services for this opportunity.
+              </p>
 
-              <div class="row align-items-center my-4">
-                <!-- Text Content Column -->
-                <div class="col-lg-7" data-aos="fade-right" data-aos-delay="100">
-                  <p>
-                    I want to thank Haniya Saleh, my supervisor, for providing guidance, constructive feedback, and
-                    support
-                    throughout this work term. Her willingness to answer questions, share knowledge, and trust me with
-                    meaningful responsibilities made this a valuable learning experience. I also thank my colleagues on
-                    the
-                    Managed Desktops team and my fellow co-op students for creating a collaborative and supportive work
-                    environment. The knowledge shared, help offered, and professional relationships built made this term
-                    both productive and enjoyable. Finally, I thank the University of Guelph's Co-operative Education
-                    program and Computing and Communications Services for this opportunity.
-                  </p>
-                </div>
                 <!-- Image Column -->
                 <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
                   <div class="hero-visual">
@@ -633,12 +595,10 @@
                         <div class="bg-circle circle-2"></div>
                       </div>
                       <div class="profile-background"></div>
-                      <img src="assets/img/portfolio/CCS page.webp" alt="Acknowledgments" class="profile-image">
+                      <img src="assets/img/portfolio/CCS page.webp" alt="CCS Building" class="profile-image">
                     </div>
                   </div>
                 </div>
-              </div>
-
             </div>
           </div>
 
@@ -647,8 +607,11 @@
       </div>
 
     </section><!-- /Experience Details Section -->
+
   </main>
+
   <footer id="footer" class="footer position-relative">
+
     <div class="container">
       <div class="contact text-center">
         <h2>Get In Touch</h2>
@@ -665,15 +628,23 @@
         </p>
       </div>
       <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade and Josephine Udounwa</a>
       </div>
     </div>
+
   </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
   <!-- Preloader -->
   <div id="preloader"></div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -685,8 +656,10 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
