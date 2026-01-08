@@ -2545,6 +2545,16 @@ section,
   }
 }
 
+/* Make me.webp images smaller in portfolio details */
+.portfolio-details img[src*="me.webp"],
+.portfolio-details img[src*="me1.webp"],
+.portfolio-details img[src*="me2.webp"],
+.portfolio-details img[src*="me3.webp"] {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
