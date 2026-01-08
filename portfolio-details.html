@@ -141,38 +141,42 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
+            <div class="portfolio-details-slider swiper init-swiper"
+              style="display: flex; justify-content: center; align-items: center;">
 
               <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                    "slidesPerView": 1,
-                    "centeredSlides": true,
-                    "spaceBetween": 30,
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-                  }
-                }
-              </script>
+      {
+        "loop": true,
+        "speed": 600,
+        "autoplay": {
+          "delay": 5000
+        },
+          "slidesPerView": 1,
+          "centeredSlides": true,
+          "spaceBetween": 30,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+        }
+      }
+    </script>
 
               <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="CCS Office" class="img-fluid" loading="lazy">
+                <div class="swiper-slide" style="display: flex; justify-content: center;">
+                  <img src="assets/img/portfolio/portfolio-1.webp" alt="CCS Office" class="img-fluid" loading="lazy"
+                    style="width: 100%; max-width: 800px; height: auto; object-fit: contain;">
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ccs2.png" alt="Work Environment" class="img-fluid" loading="lazy">
+                <div class="swiper-slide" style="display: flex; justify-content: center;">
+                  <img src="assets/img/portfolio/ccs2.png" alt="Work Environment" class="img-fluid" loading="lazy"
+                    style="width: 100%; max-width: 800px; height: auto; object-fit: contain;">
                 </div>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/ccs3.png" alt="Team Collaboration" class="img-fluid" loading="lazy">
+                <div class="swiper-slide" style="display: flex; justify-content: center;">
+                  <img src="assets/img/portfolio/ccs3.png" alt="Team Collaboration" class="img-fluid" loading="lazy"
+                    style="width: 100%; max-width: 800px; height: auto; object-fit: contain;">
                 </div>
 
               </div>
