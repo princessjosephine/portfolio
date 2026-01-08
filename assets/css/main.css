@@ -2545,14 +2545,85 @@ section,
   }
 }
 
-/* Make me.webp images smaller in portfolio details */
-.portfolio-details img[src*="me.webp"],
-.portfolio-details img[src*="me1.webp"],
-.portfolio-details img[src*="me2.webp"],
-.portfolio-details img[src*="me3.webp"] {
+/* Make floating image containers more responsive and centered */
+.float-image-container {
+  float: right;
+  margin: 0 0 20px 30px;
+  max-width: 400px;
+  width: 40%;
+}
+
+.float-image-container-left {
+  float: left;
+  margin: 0 30px 20px 0;
+  max-width: 400px;
+  width: 40%;
+}
+
+/* Better responsive behavior for tablets and phones */
+@media (max-width: 1200px) {
+  .float-image-container,
+  .float-image-container-left {
+    width: 45%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .float-image-container,
+  .float-image-container-left {
+    float: none;
+    margin: 30px auto;
+    max-width: 500px;
+    width: 80%;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .float-image-container,
+  .float-image-container-left {
+    float: none;
+    margin: 20px auto;
+    max-width: 100%;
+    width: 90%;
+    display: block;
+  }
+}
+
+/* Center the profile containers and images */
+.hero-visual,
+.profile-container {
+  margin: 0 auto;
+  display: block;
+}
+
+.profile-image {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Make specific me.webp images smaller with rounded corners and centered */
+img[src*="me.webp"],
+img[src*="me1.webp"],
+img[src*="me2.webp"],
+img[src*="me3.webp"] {
   max-width: 250px;
   width: 100%;
   height: auto;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive sizing for me.webp images */
+@media (max-width: 768px) {
+  img[src*="me.webp"],
+  img[src*="me1.webp"],
+  img[src*="me2.webp"],
+  img[src*="me3.webp"] {
+    max-width: 200px;
+  }
 }
 
 /*--------------------------------------------------------------
