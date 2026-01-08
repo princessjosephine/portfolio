@@ -2608,10 +2608,10 @@ img[src*="me.webp"],
 img[src*="me1.webp"],
 img[src*="me2.webp"],
 img[src*="me3.webp"] {
-  max-width: 250px;
+  max-width: 350px;
   width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 10px;
   display: block;
   margin: 0 auto;
 }
@@ -2622,7 +2622,7 @@ img[src*="me3.webp"] {
   img[src*="me1.webp"],
   img[src*="me2.webp"],
   img[src*="me3.webp"] {
-    max-width: 200px;
+    max-width: 300px;
   }
 }
 
