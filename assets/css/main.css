@@ -2362,6 +2362,12 @@ section,
   font-size: 15px;
 }
 
+
+.portfolio-description ul li {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+
 @media (max-width: 991px) {
   .portfolio-details .portfolio-info {
     margin-top: 20px;
